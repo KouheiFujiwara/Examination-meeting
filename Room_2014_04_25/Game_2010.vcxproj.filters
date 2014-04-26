@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="DXUT">
+      <UniqueIdentifier>{a43c5c25-0e86-4a20-b64a-883785ff74fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support">
+      <UniqueIdentifier>{957f451c-14ad-4b2e-9266-16de33ee7b06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program">
+      <UniqueIdentifier>{e3063ccd-bf3e-4eef-b260-8c64d6ca8c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Sequence">
+      <UniqueIdentifier>{e6fa4f5b-a7e3-49a0-bc3c-9292d34fa038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Sequence\play">
+      <UniqueIdentifier>{ccdf6c0a-db80-4125-95ac-00261c0ea4f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Sequence\Title">
+      <UniqueIdentifier>{0c723ec1-8113-47c8-a968-98ee5cf553a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DXUT\Optional\directx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <ClInclude Include="DXUT\Core\DXUT.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTenum.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Core\DXUT.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTenum.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClInclude Include="DXUT\Optional\DXUTcamera.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTgui.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTres.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTsettingsdlg.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmesh.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Optional\DXUTcamera.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTgui.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTres.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTsettingsdlg.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmesh.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Support\BaseObj.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\C2D.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\C3D.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\C3DFactory.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\C3DTexture.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\Camera.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\DXconvAnsiToWide.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\Fade.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\font.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\GlobalD3DDevice.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\GraphicsManager.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\Info.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\Mesh.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\TextFont.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\Texture.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\UINumber.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\Vertex.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\wsb_xml.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKwavefile.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\HitJudgments.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Support\PointSprite.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Sequence\SequenceBase.cpp">
+      <Filter>Program\Sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Sequence\Play\Play.cpp">
+      <Filter>Program\Sequence\play</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Sequence\Title\Title.cpp">
+      <Filter>Program\Sequence\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\GameMain.cpp">
+      <Filter>Program</Filter>
+    </ClCompile>
+    <ClCompile Include="Program\Sequence\SequenceManager.cpp">
+      <Filter>Program\Sequence</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </CLInclude>
+    <ResourceCompile Include="Game.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ClInclude Include="Support\BaseObj.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\C2D.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\C3D.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\C3DFactory.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\C3DTexture.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\Camera.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\DXconvAnsiToWide.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\Fade.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\font.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\GlobalD3DDevice.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\GraphicsManager.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\Info.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\Mesh.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\TextFont.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\Texture.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\UINumber.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\Vertex.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\wsb_xml.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKwavefile.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\HitJudgments.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Support\PointSprite.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Program\Sequence\SequenceBase.h">
+      <Filter>Program\Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="Program\Sequence\Play\Play.h">
+      <Filter>Program\Sequence\play</Filter>
+    </ClInclude>
+    <ClInclude Include="Program\Sequence\Title\Title.h">
+      <Filter>Program\Sequence\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Program\GameMain.h">
+      <Filter>Program</Filter>
+    </ClInclude>
+    <ClInclude Include="Program\Sequence\SequenceManager.h">
+      <Filter>Program\Sequence</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

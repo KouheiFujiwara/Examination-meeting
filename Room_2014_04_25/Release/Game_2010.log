@@ -1,0 +1,60 @@
+﻿2014/04/26 15:06:25 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\vantan\Documents\2014年度授業\ゲーム製作\Room_2014_04_25\Game_2010.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "Release\Game.unsuccessfulbuild" を作成しています。
+       ClCompile:
+         すべての出力が最新のものです。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IDXUT\Core /IDXUT\Optional /Zi /nologo /W4 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D D3DXFX_LARGEADDRESS_HANDLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /openmp- /Yu"DXUT.h" /Fp"Release\Game.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Program\GameMain.cpp Program\Sequence\Play\Play.cpp Program\Sequence\SequenceBase.cpp Program\Sequence\SequenceManager.cpp Program\Sequence\Title\Title.cpp Game.cpp  
+         GameMain.cpp
+         Play.cpp
+         SequenceBase.cpp
+         SequenceManager.cpp
+         Title.cpp
+         Game.cpp
+       ResourceCompile:
+         すべての出力が最新のものです。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vantan\Documents\2014年度授業\ゲーム製作\Room_2014_04_25\Release\Game.exe" /INCREMENTAL:NO /NOLOGO libxml2.lib d3dx10.lib d3dx9.lib dxerr.lib dxguid.lib winmm.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Game.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vantan\Documents\2014年度授業\ゲーム製作\Room_2014_04_25\Release\Game.pdb" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vantan\Documents\2014年度授業\ゲーム製作\Room_2014_04_25\Release\Game.lib" /MACHINE:X86 Release\Game.res
+         Release\SDKwavefile.obj
+         Release\GameMain.obj
+         Release\Play.obj
+         Release\SequenceBase.obj
+         Release\SequenceManager.obj
+         Release\Title.obj
+         Release\BaseObj.obj
+         Release\C2D.obj
+         Release\C3D.obj
+         Release\C3DFactory.obj
+         Release\C3DTexture.obj
+         Release\Camera.obj
+         Release\DXconvAnsiToWide.obj
+         Release\Fade.obj
+         Release\font.obj
+         Release\GlobalD3DDevice.obj
+         Release\GraphicsManager.obj
+         Release\HitJudgments.obj
+         Release\Info.obj
+         Release\Mesh.obj
+         Release\PointSprite.obj
+         Release\TextFont.obj
+         Release\Texture.obj
+         Release\UINumber.obj
+         Release\Vertex.obj
+         Release\wsb_xml.obj
+         Release\DXUT.obj
+         Release\DXUTenum.obj
+         Release\DXUTmisc.obj
+         Release\DXUTcamera.obj
+         Release\DXUTgui.obj
+         Release\DXUTres.obj
+         Release\DXUTsettingsdlg.obj
+         Release\SDKmesh.obj
+         Release\SDKmisc.obj
+         Release\Game.obj  
+     1>SequenceManager.obj : error LNK2001: 外部シンボル ""private: __thiscall Title::Title(void)" (??0Title@@AAE@XZ)" は未解決です。
+     1>C:\Users\vantan\Documents\2014年度授業\ゲーム製作\Room_2014_04_25\Release\Game.exe : fatal error LNK1120: 外部参照 1 が未解決です。
+     1>プロジェクト "C:\Users\vantan\Documents\2014年度授業\ゲーム製作\Room_2014_04_25\Game_2010.vcxproj" (build ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:08.78
