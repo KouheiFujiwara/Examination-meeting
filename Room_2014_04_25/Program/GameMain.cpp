@@ -14,3 +14,13 @@ GameMain::~GameMain()
 {
     SequenceManager::DeleteInstance();
 }
+
+void GameMain::Draw()
+{
+    SequenceManager::GetInstance()->Draw();
+}
+
+void GameMain::Logic()
+{
+    SequenceManager::GetInstance()->Logic();
+}

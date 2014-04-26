@@ -7,7 +7,7 @@
 class Play : public SequenceBase
 {
 private:
-	Play();
+    Play(){};
 	//	ÉRÉsÅ[ã÷é~
 	Play(const Play& obj);
 	Play& operator = (const Play& obj);
@@ -16,8 +16,7 @@ private:
 public:
 	~Play(){}
 	inline static Play* GetInstance()
-	{
-		
+	{		
 		if(!SharedInstance)
 			SharedInstance = new Play();
 		return SharedInstance ;

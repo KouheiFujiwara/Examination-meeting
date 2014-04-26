@@ -19,7 +19,7 @@ C3D::~C3D()
 C3D* C3D::Create( const std::string& _path )
 {
 	C3D* p =  new C3D() ;
-	p->Load( _path ) ;
+	p->Load( "Resource/mesh/"+_path ) ;
 
 	//	レンダリングリストへの登録
 	CGraphicsManager::m_RenderList.push_back( p ) ;

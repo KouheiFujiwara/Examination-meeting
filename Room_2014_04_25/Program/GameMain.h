@@ -9,7 +9,7 @@ private:
 	GameMain(const GameMain& obj);
 	GameMain& operator = ( const GameMain& obj);
 	
-	GameMain();
+	GameMain() ;
 
 	static GameMain* SharedInstance ;
 
@@ -20,12 +20,13 @@ public:
 		if(!SharedInstance) SharedInstance = new GameMain() ;
 		return SharedInstance ;
 	}
+
 	inline static void DeleteInstance()
 	{
 		SAFE_DELETE(SharedInstance) ;
 	}
 
-	void Draw(){}
-	void Logic(){}
+	void Draw();
+	void Logic();
 };
 

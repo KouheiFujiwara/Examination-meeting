@@ -15,7 +15,8 @@ C2D::C2D( const string& FileName,int num )
 
 	Texture* pObj ;
 	pObj = new Texture() ;
-	m_texture = pObj->Load( FileName ) ;
+    //  リソース、イメージフォルダ名を省略
+	m_texture = pObj->Load( "Resource/Img/" + FileName ) ;
 
 	// テクスチャからサーフェイスを取得
 	IDirect3DSurface9 *pSurface;

@@ -9,7 +9,7 @@ Fade::Fade()
 	//	モードを何もしないに設定
 	m_Mode = MODE_NONE ;
 
-	m_OutAndInImage = new C2D("Img/FadeImg.png") ;
+	m_OutAndInImage = new C2D("testFade.png") ;
 
 	//	最初のアルファ値を0に設定
 	m_OutAndInImage->m_alpha = 0 ;

@@ -1,17 +1,21 @@
-﻿2014/04/26 15:43:38 にビルドを開始しました。
-     1>ノード 2 上のプロジェクト "C:\Users\vantan\Desktop\PS12Fujiwar\Room_2014_04_25\Game_2010.vcxproj" (build ターゲット)。
+﻿2014/04/26 18:11:22 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\vantan\Desktop\Ps12Fujiwara\Github\Room_2014_04_25\Game_2010.vcxproj" (build ターゲット)。
      1>InitializeBuildStatus:
          "AlwaysCreate" が指定されたため "Debug\Game.unsuccessfulbuild" を作成しています。
        ClCompile:
          すべての出力が最新のものです。
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IDXUT\Core /IDXUT\Optional /ZI /nologo /W4 /WX- /Od /Oi /Oy- /D WIN32 /D _DEBUG /D DEBUG /D PROFILE /D _WINDOWS /D D3DXFX_LARGEADDRESS_HANDLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /openmp- /Yu"DXUT.h" /Fp"Debug\Game.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Program\Sequence\SequenceManager.cpp  
-         SequenceManager.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IDXUT\Core /IDXUT\Optional /ZI /nologo /W4 /WX- /Od /Oi /Oy- /D WIN32 /D _DEBUG /D DEBUG /D PROFILE /D _WINDOWS /D D3DXFX_LARGEADDRESS_HANDLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /openmp- /Yu"DXUT.h" /Fp"Debug\Game.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Support\C2D.cpp Support\Fade.cpp  
+         C2D.cpp
+     1>c:\users\vantan\desktop\ps12fujiwara\github\room_2014_04_25\support\c2d.cpp(145): warning C4238: 非標準の拡張機能が使用されています : 右辺値のクラスが左辺値に使用されます。
+     1>c:\users\vantan\desktop\ps12fujiwara\github\room_2014_04_25\support\c2d.cpp(152): warning C4238: 非標準の拡張機能が使用されています : 右辺値のクラスが左辺値に使用されます。
+         Fade.cpp
+         コードを生成中...
        ResourceCompile:
          すべての出力が最新のものです。
        ManifestResourceCompile:
          すべての出力が最新のものです。
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vantan\Desktop\PS12Fujiwar\Room_2014_04_25\Debug\Game.exe" /INCREMENTAL /NOLOGO libxml2.lib d3dx10d.lib d3dx9d.lib dxerr.lib dxguid.lib winmm.lib comctl32.lib libxml2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Game.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vantan\Desktop\PS12Fujiwar\Room_2014_04_25\Debug\Game.pdb" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vantan\Desktop\PS12Fujiwar\Room_2014_04_25\Debug\Game.lib" /MACHINE:X86 Debug\Game.res
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vantan\Desktop\Ps12Fujiwara\Github\Room_2014_04_25\Debug\Game.exe" /INCREMENTAL /NOLOGO libxml2.lib d3dx10d.lib d3dx9d.lib dxerr.lib dxguid.lib winmm.lib comctl32.lib libxml2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Game.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vantan\Desktop\Ps12Fujiwara\Github\Room_2014_04_25\Debug\Game.pdb" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vantan\Desktop\Ps12Fujiwara\Github\Room_2014_04_25\Debug\Game.lib" /MACHINE:X86 Debug\Game.res
          Debug\Game.exe.embed.manifest.res
          Debug\SDKwavefile.obj
          Debug\GameMain.obj
@@ -54,12 +58,12 @@
          すべての出力が最新のものです。
        LinkEmbedManifest:
          すべての出力が最新のものです。
-         Game_2010.vcxproj -> C:\Users\vantan\Desktop\PS12Fujiwar\Room_2014_04_25\Debug\Game.exe
+         Game_2010.vcxproj -> C:\Users\vantan\Desktop\Ps12Fujiwara\Github\Room_2014_04_25\Debug\Game.exe
        FinalizeBuildStatus:
          ファイル "Debug\Game.unsuccessfulbuild" を削除しています。
          "Debug\Game.lastbuildstate" のタッチ タスクを実行しています。
-     1>プロジェクト "C:\Users\vantan\Desktop\PS12Fujiwar\Room_2014_04_25\Game_2010.vcxproj" (build ターゲット) のビルドが完了しました。
+     1>プロジェクト "C:\Users\vantan\Desktop\Ps12Fujiwara\Github\Room_2014_04_25\Game_2010.vcxproj" (build ターゲット) のビルドが完了しました。
 
 ビルドに成功しました。
 
-経過時間 00:00:00.94
+経過時間 00:00:03.58

@@ -8,6 +8,7 @@
 #include "Program/GameMain.h"
 #include "Support/GlobalD3DDevice.h"
 #include "Support/DXconvAnsiToWide.h"
+#include "Support/Fade.h"
 
 //--------------------------------------------------------------------------------------
 // Rejects any D3D9 devices that aren't acceptable to the app by returning false
@@ -43,6 +44,7 @@ HRESULT CALLBACK OnD3D9CreateDevice( IDirect3DDevice9* pd3dDevice, const D3DSURF
                                      void* pUserContext )
 {
 	GlobalD3DDevice::GetInstance( pd3dDevice ) ;
+    Fade::GetInstance();
 	GameMain::GetInstance();
     return S_OK;
 }
@@ -65,6 +67,7 @@ HRESULT CALLBACK OnD3D9ResetDevice( IDirect3DDevice9* pd3dDevice, const D3DSURFA
 void CALLBACK OnFrameMove( double fTime, float fElapsedTime, void* pUserContext )
 {
 	GameMain::GetInstance()->Logic();
+    Fade::GetInstance()->DoFadeLogic();
 }
 
 
@@ -79,6 +82,7 @@ void CALLBACK OnD3D9FrameRender( IDirect3DDevice9* pd3dDevice, double fTime, flo
     V( pd3dDevice->Clear( 0, NULL, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, D3DCOLOR_ARGB( 10, 70, 70, 70 ), 1.0f, 0 ) );
 
 	GameMain::GetInstance()->Draw();
+    Fade::GetInstance()->DoFadeDraw();
 
     // Render the scene
     if( SUCCEEDED( pd3dDevice->BeginScene() ) )
@@ -105,6 +109,7 @@ void CALLBACK OnD3D9LostDevice( void* pUserContext )
 {
     GameMain::DeleteInstance();
 	GlobalD3DDevice::DeleteInstance() ;
+    Fade::DeleteInstance();
 	DXconvAnsiToWide::DeleteInstance() ;
 }
 

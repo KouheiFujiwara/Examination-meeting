@@ -3,6 +3,7 @@
 #include "Play/Play.h"
 #include "Title/Title.h"
 #include "../../Support/Fade.h"
+#include "../../Support/Camera.h"
 
 SequenceManager* SequenceManager::SharedInstance ;
 
@@ -14,6 +15,9 @@ SequenceManager::SequenceManager()
 SequenceManager::~SequenceManager()
 {
     m_NowSequence->DeleteInstance();
+
+    if(m_NextSequence != NULL)
+        m_NextSequence = NULL ;
 }
 
 void SequenceManager::SetNextSequence(SequenceBase* NextSequence)
@@ -55,9 +59,16 @@ void SequenceManager::ChangeSequence()
 void SequenceManager::Draw()
 {
 	m_NowSequence->Draw();
+
+    if(Fade::GetInstance()->AlphaComplate() && m_ChangeSequence )
+        ChangeSequence() ;
+
+    //  カメラのアップデート
+    m_NowSequence->GetCamera()->UpData() ;
 }
 
 void SequenceManager::Logic()
 {
-	m_NowSequence = m_NowSequence->Logic();
+    m_NowSequence = m_NowSequence->Logic();
+
 }

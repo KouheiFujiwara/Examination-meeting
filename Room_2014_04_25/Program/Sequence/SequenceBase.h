@@ -2,10 +2,16 @@
 
 #pragma once
 #include <memory>
+class Camera ;
+
 class SequenceBase
 {
+protected:
+    //  カメラ
+    std::shared_ptr<Camera> m_Camera ;
+
 public:
-	SequenceBase(){};
+	SequenceBase();
 	virtual ~SequenceBase(){};
 
 	//	データの初期関数
@@ -18,6 +24,8 @@ public:
 	virtual void Draw()	= 0;
 
 	//	処理関数
-	virtual SequenceBase* Logic() = 0;
+	virtual SequenceBase* Logic() = 0;    
+
+    inline std::shared_ptr<Camera> GetCamera(){ return m_Camera ;}
 };
 

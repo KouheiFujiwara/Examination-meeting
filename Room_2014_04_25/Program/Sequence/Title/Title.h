@@ -5,6 +5,8 @@
 #include "../SequenceBase.h"
 #include <memory>
 
+class C3D ;
+
 class Title : 
 	public SequenceBase
 {
@@ -30,7 +32,7 @@ public:
 		SAFE_DELETE( SharedInstance );
 	}
 
-	SequenceBase* Logic(){ return this; }
+	SequenceBase* Logic();
 	void Draw(){}
 	void Init(){}
 };
