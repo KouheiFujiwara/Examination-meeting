@@ -9,3 +9,8 @@ GameMain::GameMain()
 {
 	SequenceManager::GetInstance() ;
 }
+
+GameMain::~GameMain()
+{
+    SequenceManager::DeleteInstance();
+}

@@ -13,7 +13,7 @@ SequenceManager::SequenceManager()
 
 SequenceManager::~SequenceManager()
 {
-	SAFE_DELETE(m_NowSequence);
+    m_NowSequence->DeleteInstance();
 }
 
 void SequenceManager::SetNextSequence(SequenceBase* NextSequence)

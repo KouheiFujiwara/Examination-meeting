@@ -103,6 +103,7 @@ LRESULT CALLBACK MsgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam,
 //--------------------------------------------------------------------------------------
 void CALLBACK OnD3D9LostDevice( void* pUserContext )
 {
+    GameMain::DeleteInstance();
 	GlobalD3DDevice::DeleteInstance() ;
 	DXconvAnsiToWide::DeleteInstance() ;
 }

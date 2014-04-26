@@ -9,12 +9,12 @@ private:
 	GameMain(const GameMain& obj);
 	GameMain& operator = ( const GameMain& obj);
 	
-	GameMain() ;
-	~GameMain(){}
+	GameMain();
 
 	static GameMain* SharedInstance ;
 
 public:
+    ~GameMain();
 	inline static GameMain* GetInstance()
 	{
 		if(!SharedInstance) SharedInstance = new GameMain() ;
